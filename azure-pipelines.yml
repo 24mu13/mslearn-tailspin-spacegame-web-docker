@@ -27,6 +27,7 @@ stages:
           $(tag)
 
 - stage: 'Deploy'
+  condition: false
   displayName: 'Deploy the web application'
   dependsOn: Build
   jobs:
